@@ -112,12 +112,15 @@ export default function SurpresaPage() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center mt-2 space-x-2">
+            <div className="flex justify-center mt-4 space-x-2">
               {mensagens.map((_, idx) => (
-                <div
+                <button
                   key={idx}
+                  onClick={() => instanceRef.current?.moveToIdx(idx)}
                   className={`w-3 h-3 rounded-full ${
-                    idx === currentSlide ? "bg-pink-600" : "bg-gray-300"
+                    idx === currentSlide
+                      ? "bg-pink-600 scale-125"
+                      : "bg-gray-300"
                   } transition-all duration-300`}
                 />
               ))}
