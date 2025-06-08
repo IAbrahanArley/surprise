@@ -73,7 +73,7 @@ export default function SurpresaPage() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 -bottom-10 z-10 w-full">
+      <div className="absolute left-1/2 -translate-x-1/2 -bottom-40 z-10 w-full">
         <Card
           className="w-full max-w-md mt-4  backdrop-blur-sm rounded-t-2xl shadow-lg overflow-hidden rounded-b-none"
           style={{
